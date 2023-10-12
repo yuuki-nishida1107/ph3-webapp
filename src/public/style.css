@@ -1,0 +1,565 @@
+
+body{
+    background-color: rgb(236, 234, 234);
+}
+main{
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+.header-container{
+    width:100%;
+}
+.header-logo{
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+}
+.header-logo span{
+    color:rgb(117, 146, 146);
+    padding-left: 8px;
+}
+.main-nav{
+    margin-right: 40px;
+}
+.button{
+    background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+        width:190px;
+        color: white;
+        background:linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 60px;
+        box-shadow: 5px 5px 5px rgb(99, 165, 183);
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height:8vh;
+    background-color: white;
+    width:100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    gap: 20px;
+    height:67vh;
+    width:85%;
+    margin:0 auto;
+}
+
+.times{ 
+    display: flex;
+    gap: 20px;
+    width:100%;
+}
+.circles{
+    display:flex;
+    gap:20px;
+}
+.main-container ul li{
+    background-color: white;
+}
+.time{
+    height: 164px;
+    display: grid;
+    align-items: center;
+    width: calc((100% - 40px)/3);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 4px 4px rgb(151, 150, 150);
+}
+
+.language{
+    height: 67vh ;
+    width:calc((100% - 20px)/2);
+    box-shadow: 3px 4px 4px rgb(151, 150, 150);
+}
+.contents{
+    width:calc((100% - 20px)/2);
+    height: 67vh;
+    box-shadow: 3px 4px 4px rgb(151, 150, 150);
+}
+.title{
+    color: rgb(4, 118, 174);
+    font-weight: bold;
+    font-size: 18px;
+}
+.hours{
+    font-weight: bold;
+    font-size: 32px;
+}
+.hour{
+    font-size:21px;
+    color:rgb(193, 236, 236);
+}
+.circle{
+    border-radius: 20px;
+}
+.title-two{
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.footer-container{
+    margin: auto;
+    width:100px;
+    margin-top: 50px;
+}
+.image{
+    width:200px;
+    top: 300px;
+}
+.times-container{
+    display:flex;
+    flex-direction: column;
+    width: calc((100% - 20px)/2);
+    height: 67vh;
+}
+.circle-container{
+    width: calc((100% - 20px)/2);
+    height:67vh;
+}
+.gragh-container{
+    background-color: white;
+    width:100%;
+    height: 670px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 4px rgb(151, 150, 150);
+}
+
+.ex-chart-container{
+    align-items: center;
+    height: 100%;
+    position:relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* モーダル */
+.modal-container {
+    display: none;
+}
+.modal-container::before {
+    content:"";
+    position:fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal{
+    background-color: white;
+    width:70%;
+    height: 550px;
+    border-radius: 20px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    margin:0 auto;
+}
+.modal-inner {
+    width: calc(100% - 112px);
+    margin: 0 auto;
+    height: 400px;
+    display:flex;
+    gap:40px;
+}
+.modal-close-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top:15px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 50%;
+}
+.block{
+    display:block;
+}
+
+.modal-left{
+    display:flex;
+    flex-flow: column;
+    width:50%;
+}
+.modal-right{
+    display:flex;
+    flex-flow: column;
+}
+.modal-day{
+    display: flex;
+    flex-direction: column;
+}
+.checkbox{
+    background-color: rgb(241, 241, 241);
+    display: inline-block;
+    border-radius: 14px;
+    padding: 7px 7px;
+    font-size: 16px;
+    margin-top:14px;
+}
+.modal-content{
+    margin-top: 26px;
+}
+.modal-language{
+    margin-top:39px;
+}
+.hoge{
+    background-color: rgb(241, 241, 241);
+    border: none;
+    height: 60px;
+    border-radius: 10px;
+    margin-top:14px;
+    width: 100%;
+}
+.modal-right{
+    width:374px;
+}
+.twitterComent{
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 10px;
+    width:100%;
+    margin-top: 14px;
+}
+.modal-twitter{
+    margin-top: 21px;
+}
+.twitter-check{
+    margin-top: 14px;
+}
+.ten{
+    font-weight: bold;
+}
+.check{
+    position: absolute;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+}
+.checkboxi{
+    font-size: 12px;
+}
+.check-design{
+    position: absolute;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+}
+
+
+label::before {
+    background-color: rgb(225, 225, 225);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+}
+label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+}
+label::before,
+label::after {
+  content: "";
+  display: block; 
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+label::after {
+    width: 10px;
+  height: 5px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+    opacity: 0;
+    left: 10px;
+    top:5px;
+  }
+  input:checked + label::after {
+    opacity: 1;
+    background-color: #619adc;
+  }
+  input:checked + label::before{
+    background-color: rgb(64, 154, 244);
+  }
+  .button-modal{background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  width:390px;
+  height: 50px;
+  color: white;
+  background:linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 60px;
+  margin:0 auto
+}
+.modal-btn{
+    text-align: center;
+    margin-top: 32px;
+}
+
+/* 完了画面 */
+.complete-container{
+    display: none;
+    position: relative;
+}
+.complete{
+    background-color: white;
+    width:75%;
+    height: 550px;
+    border-radius: 20px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.complete-block{
+    display: block;
+}
+.complete-close-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top:15px;
+    ;
+    background-color: rgb(225, 225, 225);
+    border-radius: 50%;
+}
+.complete-container::before {
+    content:"";
+    position:fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.test-container{
+    display: grid;
+    align-items: center;
+}
+
+.complete-check{
+	width:60px;
+	height:60px;
+	background-color:#d6f5d6;
+    /* border:1px solid #000000; */
+    border-radius: 50%;
+}
+.checkCircle{
+	border-left:4px solid #ffffff;
+	border-bottom:4px solid #ffffff;
+	width:23px;
+	height:10px;
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	left:17px;
+	top:21px;
+    position: absolute;
+}
+.complete-check-container{
+    position: relative;
+    width:60px;
+	height:60px;
+	background:#99f296;
+    /* border:1px solid #000000; */
+    border-radius: 50%;
+    margin: auto;
+    /* margin-top:20%; */
+}
+.complete-english{
+    text-align: center;
+    margin-bottom: 5px;
+    color:#99f296;
+}
+.test-container{
+    margin-top: 17%;
+}
+.complete-content{
+    text-align: center;
+    margin-top:15px;
+    line-height: 1.4;
+}
+/* ローシング画面 */
+.loading{
+    background-color: white;
+    width:70%;
+    height: 550px;
+    border-radius: 20px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.loading-container{
+    display:none;
+    position: relative;
+}
+.loading-block{
+    display: block;
+}
+.loading-container::before {
+    content:"";
+    position:fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.loading-circle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border: 8px solid #e0e0e0;
+    border-top: 7px solid #619adc;
+    border-radius: 50px;
+    animation: loading 700ms ease 0ms  normal;
+    }
+    .loading-circle{
+        animation-duration: 3s;
+    }
+    @keyframes loading {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    .loading.hide {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 500ms;
+    }
+/* 円グラフ */
+.language-inner{
+    height:350px;
+    margin-top:30px;
+}
+.content-inner{
+    height:275px;
+    margin-top:30px;
+}
+.responsiveButtonContainer{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom:10px;
+}
+.responsiveButton{
+    background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+        width:190px;
+        color: white;
+        background:linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 60px;
+        box-shadow: 5px 5px 5px rgb(99, 165, 183);
+        display:none;
+    
+}
+
+
+@media screen and (max-width:768px){
+    .main-container{
+        display: block;
+    }
+    .times-container{
+        width:100%;
+    }
+    .circle-container{
+        margin-top: 40px;
+        width:100%;
+    }
+    .language{
+        height:55vh;
+    }
+    .contents{
+        height:55vh;
+    }
+    .footer-container{
+        margin-top:520px;
+    }
+    .hours{
+        font-size: 30px;
+    }
+    .button{
+        display:none;
+    }
+    .responsiveButton{
+        display:block;
+        width:70%;
+        margin: 0 auto;
+    }
+    .responsiveButtonContainer{
+        text-align: center;
+    }
+    .modal-inner{
+        display: block;
+    }
+    .modal-left{
+        width:100%;
+    }
+    .modal-right{
+        width:100%;
+    }
+    .modal{
+        height:98vh;
+        width:100%;
+    }
+    .button-modal{
+        margin-top:260px
+    }
+    .checkbox{
+        font-size: 10px;
+    }
+    .hoge{
+        margin-top:2px;
+    }
+    .modal-content{
+        margin-top:5px;
+    }
+    .modal-language{
+        margin-top:8px;
+    }
+    .modal-hour{
+        margin-top:5px;
+    }
+}
